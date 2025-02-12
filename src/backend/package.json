@@ -1,0 +1,27 @@
+{
+  "name": "fleet-manager",
+  "version": "1.0.0",
+  "description": "Gestionnaire de flotte de véhicules",
+  "main": "dist/bin/fleet.js",
+  "bin": {
+    "fleet": "./dist/bin/fleet.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "cucumber-js",
+    "fleet": "ts-node bin/fleet.ts"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "@types/chai": "^4.3.5",
+    "@types/node": "^20.5.0",
+    "@types/uuid": "^9.0.2",
+    "chai": "^4.3.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
