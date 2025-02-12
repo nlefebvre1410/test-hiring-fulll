@@ -27,8 +27,8 @@ export const generateFizzBuzz = (n: number): readonly FizzBuzzOutput[] => {
 export const displayFizzBuzz = (n: number): void => {
   try {
     const sequence = generateFizzBuzz(n);
-    sequence.forEach((value, index) => {
-      console.log(`${index + 1}: ${value}`);
+    sequence.forEach((value) => {
+      console.log(value);
     });
   } catch (error) {
     if (error instanceof Error) {

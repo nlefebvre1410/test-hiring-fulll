@@ -2,8 +2,8 @@
   "compilerOptions": {
     "incremental": true,
     "target": "es2017",
-    "outDir": "build/main",
-    "rootDir": "src",
+    "outDir": "./dist",
+    "rootDir": ".",
     "moduleResolution": "node",
     "module": "commonjs",
     "declaration": true,
@@ -12,19 +12,29 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "../..",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
 
-    /* Strict Type-Checking Options */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*"],
+  "include": [
+    "index.ts",
+    "types/**/*",
+    "constants/**/*",
+    "utils/**/*",
+    "services/**/*"
+  ],
   "exclude": [
     "node_modules/**",
     "**/__tests__/**",
     "**/*.test.ts",
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "vitest.config.ts"
   ],
   "compileOnSave": false
 }

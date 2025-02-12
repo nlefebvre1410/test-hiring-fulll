@@ -49,11 +49,11 @@ describe('displayFizzBuzz', () => {
     displayFizzBuzz(5);
 
     expect(consoleSpy).toHaveBeenCalledTimes(5);
-    expect(consoleSpy).toHaveBeenNthCalledWith(1, '1: 1');
-    expect(consoleSpy).toHaveBeenNthCalledWith(2, '2: 2');
-    expect(consoleSpy).toHaveBeenNthCalledWith(3, '3: Fizz');
-    expect(consoleSpy).toHaveBeenNthCalledWith(4, '4: 4');
-    expect(consoleSpy).toHaveBeenNthCalledWith(5, '5: Buzz');
+    expect(consoleSpy).toHaveBeenNthCalledWith(1, 1);
+    expect(consoleSpy).toHaveBeenNthCalledWith(2, 2);
+    expect(consoleSpy).toHaveBeenNthCalledWith(3, 'Fizz');
+    expect(consoleSpy).toHaveBeenNthCalledWith(4, 4);
+    expect(consoleSpy).toHaveBeenNthCalledWith(5, 'Buzz');
 
     consoleSpy.mockRestore();
   });

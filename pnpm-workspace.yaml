@@ -1,0 +1,7 @@
+packages:
+  # packages pour algo et backend
+  - 'src/algo'
+  - 'src/backend'
+  # exclure les dossiers de build
+  - '!**/dist'
+  - '!**/build'

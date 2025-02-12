@@ -29,6 +29,10 @@ export class Fleet {
     return this.vehicles.get(plateNumber);
   }
 
+  getVehicles(): ReadonlyMap<string, Vehicle> {
+    return this.vehicles;
+  }
+
   getId(): string {
     return this.id;
   }

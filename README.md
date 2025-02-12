@@ -22,6 +22,31 @@ A Command Line Interface (CLI) application for vehicle fleet management, develop
 
 ➡️ Detailed documentation: [`src/backend/README.md`](src/backend/README.md)
 
+## 🚀 Installation and Commands
+
+### Installation
+
+To install all packages and build the projects:
+```bash
+pnpm install:all
+```
+
+### Available Commands
+
+#### General Commands
+- `pnpm build` : Build all projects
+- `pnpm test` : Run all tests
+
+#### Algorithm Commands
+- `pnpm fix:prettier` : Format code with Prettier
+- `pnpm test:unit` : Run unit tests
+- `pnpm test:lint` : Check linting
+- `pnpm test:prettier` : Check formatting
+- `pnpm test:spelling` : Check spelling
+
+#### Backend Commands
+- `pnpm fleet` : Run the fleet management application
+
 ## 📝 License
 
 This project is under MIT license. See [LICENSE](LICENSE) file for more details.
